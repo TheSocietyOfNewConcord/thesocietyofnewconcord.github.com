@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <style type='text/css'>
+      body { font-family: helvetica, verdana, arial; font-size: 10pt;}
+    </style>
+  </head>
+  <body>
+    <h1>
+      StaticMatic::TemplateError
+      in
+      ./src/partials/topmatter-partial.haml
+    </h1>
+    <p>StaticMatic::TemplateError</p>
+    2: - current = current_page #<br/>3: -# current page name stripped of path and ".html"<br/>4: - @tag = File.basename(current, ".html")<br/>5: -# extract page name's first character: x_pagename; use that for tertiary menu; irrelevant if no tertiary<br/>6: - @sub = @tag[0,1]<br/>7: =partial('head-partial', :locals => { :location => @tag })<br/>8: %body#page<br/>
+    <h2>Backtrace</h2>
+    (haml):5:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `instance_eval'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:108:in `generate_html_from_template_source'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:68:in `generate_partial'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/helpers.rb:190:in `partial'<br/>(haml):7:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `instance_eval'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:108:in `generate_html_from_template_source'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:68:in `generate_partial'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/helpers.rb:190:in `partial'<br/>(haml):3:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `instance_eval'<br/>/Library/Ruby/Gems/1.8/gems/haml-3.0.9/lib/haml/engine.rb:178:in `render'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:108:in `generate_html_from_template_source'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:26:in `generate_html'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/render.rb:40:in `generate_html_with_layout'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/build.rb:13:in `build_html'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/build.rb:10:in `each'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/build.rb:10:in `build_html'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/mixins/build.rb:5:in `build'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/base.rb:48:in `send'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/../lib/staticmatic/base.rb:48:in `run'<br/>/Library/Ruby/Gems/1.8/gems/staticmatic-0.11.0.alpha.5/bin/staticmatic:33<br/>/usr/bin/staticmatic:19:in `load'<br/>/usr/bin/staticmatic:19
+  </body>
+</html>

@@ -1,0 +1,213 @@
+/* Welcome to Susy. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Reset --------------------------------------------------------------*/
+/* line 14, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+/* line 17, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+  color: black;
+  background: white; }
+
+/* line 19, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 21, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle; }
+
+/* line 23, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+/* line 25, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: "" ""; }
+  /* line 96, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: ""; }
+
+/* line 27, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none; }
+
+/* HTML5 Reset --------------------------------------------------------------*/
+/* line 107, ../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.10.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+section, article, aside, header, footer, nav, dialog, figure {
+  display: block; }
+
+/* @group defaults */
+/* line 12, ../../src/stylesheets/_defaults.scss */
+body {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  color: black; }
+
+/* @group links */
+/* line 19, ../../src/stylesheets/_defaults.scss */
+:focus {
+  outline: 1px dotted #005498; }
+
+/* line 24, ../../src/stylesheets/_defaults.scss */
+a:link, a:visited {
+  color: #005498; }
+/* line 27, ../../src/stylesheets/_defaults.scss */
+a:focus, a:hover, a:active {
+  color: #00467f;
+  text-decoration: none; }
+
+/* @end */
+/* @group inline tags */
+/* line 37, ../../src/stylesheets/_defaults.scss */
+cite {
+  font-style: italic; }
+
+/* line 41, ../../src/stylesheets/_defaults.scss */
+em {
+  font-style: italic; }
+
+/* line 45, ../../src/stylesheets/_defaults.scss */
+strong {
+  font-weight: bold; }
+
+/* line 49, ../../src/stylesheets/_defaults.scss */
+ins {
+  text-decoration: underline; }
+
+/* line 53, ../../src/stylesheets/_defaults.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 57, ../../src/stylesheets/_defaults.scss */
+q {
+  font-style: italic; }
+  /* line 59, ../../src/stylesheets/_defaults.scss */
+  q em {
+    font-style: normal; }
+
+/* @end */
+/* @group replaced tags */
+/* line 68, ../../src/stylesheets/_defaults.scss */
+img {
+  vertical-align: bottom; }
+
+/* @end */
+/* @group headers */
+/* line 76, ../../src/stylesheets/_defaults.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+/* @end */
+/* @group block tags */
+/* line 84, ../../src/stylesheets/_defaults.scss */
+p {
+  margin-top: 1.375em;
+  margin-bottom: 1.375em; }
+
+/* line 105, ../../src/stylesheets/_defaults.scss */
+ol {
+  margin-top: 1.375em;
+  margin-bottom: 1.375em;
+  list-style: decimal; }
+
+/* line 109, ../../src/stylesheets/_defaults.scss */
+ul {
+  margin-top: 1.375em;
+  margin-bottom: 1.375em;
+  list-style: disc; }
+
+/* line 113, ../../src/stylesheets/_defaults.scss */
+blockquote {
+  margin: 1.375em;
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; }
+
+/* @end */
+/* @group tables */
+/* tables still need 'cellspacing="0"' in the markup */
+/* line 124, ../../src/stylesheets/_defaults.scss */
+table {
+  width: 100%;
+  border-width: 0;
+  border-style: solid;
+  border-color: black;
+  border-top-style: solid;
+  border-top-width: 0.063em;
+  padding-top: 0.625em;
+  border-bottom-style: solid;
+  border-bottom-width: 0.063em;
+  padding-bottom: 0.625em; }
+
+/* line 134, ../../src/stylesheets/_defaults.scss */
+th {
+  font-weight: bold; }
+
+/* @end */
+/* @group forms */
+/* line 141, ../../src/stylesheets/_defaults.scss */
+fieldset {
+  margin-bottom: 1.375em; }
+
+/* line 145, ../../src/stylesheets/_defaults.scss */
+legend {
+  font-weight: bold;
+  font-variant: small-caps; }
+
+/* line 150, ../../src/stylesheets/_defaults.scss */
+label {
+  display: block;
+  margin-top: 1.375em; }
+
+/* line 155, ../../src/stylesheets/_defaults.scss */
+legend + label {
+  margin-top: 0; }
+
+/* line 159, ../../src/stylesheets/_defaults.scss */
+textarea, input:not([type="radio"]) {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%; }
+
+/* @end */
+/* @end */
+/* line 8, ../../src/stylesheets/print.scss */
+nav {
+  display: none; }
+
+/* line 12, ../../src/stylesheets/print.scss */
+* {
+  float: none !important; }
+
+/* line 16, ../../src/stylesheets/print.scss */
+body {
+  font-family: "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+  font-size: 12pt;
+  background: white;
+  color: black; }
+
+/* line 22, ../../src/stylesheets/print.scss */
+a:link:after, a:visited:after {
+  content: " (" attr(href) ") "; }
